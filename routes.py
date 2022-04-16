@@ -4,13 +4,13 @@ from flask import Flask
 
 app = Flask(__name__)
 
-@app.get("/")
+@app.get("/aboutme")
 def index():
 
     me = {
-        "first": "Phil",
-        "last": "Chaplin",
-        "hobbies": "Scuba Diving",
+        "first_name": "Phil",
+        "last_name": "Chaplin",
+        "hobby": "Scuba Diving",
     }
     return me
 
